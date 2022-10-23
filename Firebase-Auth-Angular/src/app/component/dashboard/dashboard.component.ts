@@ -9,15 +9,18 @@ import { DataService } from 'src/app/shared/data.service';
 })
 export class DashboardComponent implements OnInit {
 
+  title = 'angulartutorials';
 
-  constructor(private auth: AuthService, private data: DataService) { }
+  Click:boolean = true;
+  visible:boolean = false;
 
-  ngOnInit(): void {
-    
+  onclick()
+  {
+    this.Click = !this.Click;
+    this.visible = !this.visible 
   }
-
-  // register() {
-  //   this.auth.logout();
-  // }
+  
+  ngOnInit(): void {
+  }
 
 }

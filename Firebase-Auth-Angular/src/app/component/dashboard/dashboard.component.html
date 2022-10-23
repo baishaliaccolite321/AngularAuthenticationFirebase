@@ -1,4 +1,15 @@
-<div style="text-align:centre">
-<h1>
-    Hello World!
-</h1></div>
+<div class="text-center">
+    <div style = "position:fixed; right:740px; top:290px;">
+            <button type="button" class="btn btn-danger" (click)="onclick()">
+              {{"Click Me!"}}
+            </button>
+
+            <ng-container *ngIf="visible">
+                <div class="bg-white shadow-sm p-3">
+                    <h4>Hello World</h4>
+                </div>
+            </ng-container>
+
+
+    </div>
+        </div>
